@@ -1,0 +1,10 @@
+n = int(input('Enter limit for list: '))
+l = []
+c = 0
+print('Enter', n, 'numbers: ')
+for i in range(1, n+1):
+    x = int(input())
+    l.append(x)
+    if(prime(x)):
+        c += 1
+print('The number of prime numbers in given list is', c)

@@ -1,0 +1,10 @@
+def oddocc(a):
+   xor=0
+   for i in  a:
+        xor^=(1<<i)
+   for i in a:
+       if xor &(1<<i):
+          print(i)
+          xor^=(1<<i)
+x=[1,2,3,2,1,3,2,1,2,2]
+(oddocc(x))
